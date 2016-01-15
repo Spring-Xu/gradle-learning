@@ -34,7 +34,7 @@ into 'destination'
 
 以上copyFile将xml文件夹中的所有内容拷贝到destination文件夹中。这里的两个文件夹都是相对于当前Project而言的，即build.gradle文件所在的目录。
 
-Task之间可以存在依赖关系，比如taskA依赖于taskB，那么在执行taskA时，Gradle会先执行taskB，然后再执行taskB。声明Task依赖关系的一种方式是在定义一个Task的时候：
+Task之间可以存在依赖关系，比如taskA依赖于taskB，那么在执行taskA时，Gradle会先执行taskB，然后再执行taskA。声明Task依赖关系的一种方式是在定义一个Task的时候：
 
 task taskA（dependsOn:taskB）<< {
 println "executing taskA"
